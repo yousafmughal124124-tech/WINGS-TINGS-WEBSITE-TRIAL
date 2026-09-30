@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-flame-50: #fff4ed;
+  --color-flame-500: #ff4a1c;
+  --color-flame-600: #e83307;
+  --color-gold-400: #fbbf24;
+  --color-charcoal-950: #08080a;
+  --color-charcoal-900: #0e0e12;
+  --color-charcoal-800: #15151b;
+  --color-charcoal-700: #1e1e27;
+  --color-charcoal-600: #292936;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  background-color: #0b0b0e;
+  color: #f4f4f6;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0b0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #272733;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e83307;
+}
+
+@keyframes float-particle {
+  0% { transform: translateY(0px) rotate(0deg); opacity: 0.6; }
+  50% { transform: translateY(-14px) rotate(10deg); opacity: 0.9; }
+  100% { transform: translateY(0px) rotate(0deg); opacity: 0.6; }
+}
+
+.animate-float-slow {
+  animation: float-particle 5s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-particle 3.2s ease-in-out infinite reverse;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Wings & Tingz | Home of the Main Chick & Side Ting™",
+  "description": "Bold, crispy, saucy chicken wings & comfort food in Al-Rehman Garden Phase 2, Lahore. Home of the Main Chick & Side Ting™.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
